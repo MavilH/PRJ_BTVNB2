@@ -15,9 +15,9 @@
     <body>
         <form action="random" method="GET">
             <select name="choose">
-                <option value="1">Rock</option>
-                <option value="2">Paper</option>
-                <option value="3">Scissors</option>
+                <option value=1>Rock</option>
+                <option value=2>Paper</option>
+                <option value=3>Scissors</option>
             </select> <br>
             <input type="submit" value="Submit  " />
         </form>

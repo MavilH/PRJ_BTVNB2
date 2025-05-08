@@ -12,6 +12,7 @@
         <title>JSP Page</title>
     </head>
     <body>
+        <h1>SERVER CHOOSE: ${requestScope.item}</h1>
         <h1>${requestScope.message}</h1>
     </body>
 </html>

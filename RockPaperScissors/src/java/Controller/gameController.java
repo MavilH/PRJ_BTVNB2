@@ -51,6 +51,7 @@ public class gameController extends HttpServlet {
         }else {
             msg = "DRAW";
         }
+        request.setAttribute("item", randomObj.getName());
         request.setAttribute("message", msg);
         request.getRequestDispatcher("home.jsp").forward(request, response);
     }

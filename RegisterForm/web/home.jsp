@@ -1,9 +1,10 @@
 <%-- 
     Document   : home
-    Created on : May 8, 2025, 2:35:31 PM
+    Created on : May 8, 2025, 3:01:35 PM
     Author     : ADMIN
 --%>
 
+<%@page import="Model.User"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -12,7 +13,12 @@
         <title>JSP Page</title>
     </head>
     <body>
-        <h1>SERVER CHOOSE: ${requestScope.item}</h1>
-        <h1>${requestScope.message}</h1>
+        <%
+            User u = (User)request.getAttribute("user");
+        %>
+        <%= u.getFullName()%>
+        <%= u.getUserName()%>
+        <%= u.getPassword()%>
+        <%= u.getEmail()%>
     </body>
 </html>
